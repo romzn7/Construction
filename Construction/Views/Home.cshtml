@@ -1,0 +1,23 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+    Layout = "ConstructionTemplate.cshtml";
+}
+
+<!-- Banner -->
+@{ Html.RenderAction("RenderBanner", "Home");}
+<!-- Banner end -->
+<!-- About -->
+@{ Html.RenderAction("RenderWelcome", "Home");}
+<!-- About end -->
+<!-- Why us -->
+@{ Html.RenderAction("RenderWhyChooseUs", "Home");}
+<!-- Why us end -->
+<!-- Services -->
+@{ Html.RenderAction("RenderServices", "Home");}
+<!-- Services end -->
+<!-- Portfolio -->
+@*@{ Html.RenderAction("RenderMadeWithLove", "Home");}*@
+<!-- Portfolio end -->
+<!-- Testimonial -->
+@{ Html.RenderAction("RenderContact", "Home");}
+<!-- Testimonial end -->

@@ -1,0 +1,82 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+    Layout = null;
+}
+
+@* the fun starts here *@
+
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <title>Construction - Free HTML Bootstrap Template</title>
+    <!-- Mobile Specific Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- Custom Fonts -->
+    <link href="~/custom-font/fonts.css" rel="stylesheet" />
+    <!-- Bootstrap -->
+    <link href="~/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="~/css/font-awesome.min.css" />
+    <!-- Bootsnav -->
+    <link rel="stylesheet" href="~/css/bootsnav.css">
+    <!-- Fancybox -->
+    <link rel="stylesheet" type="text/css" href="~/css/jquery.fancybox.css?v=2.1.5" media="screen" />
+    <!-- Custom stylesheet -->
+    <link rel="stylesheet" href="~/css/custom.css" />
+    <!--[if lt IE 9]>
+            <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+    <!-- Preloader -->
+
+    <div id="loading">
+        <div id="loading-center">
+            <div id="loading-center-absolute">
+                <div class="object"></div>
+                <div class="object"></div>
+                <div class="object"></div>
+                <div class="object"></div>
+                <div class="object"></div>
+                <div class="object"></div>
+                <div class="object"></div>
+                <div class="object"></div>
+                <div class="object"></div>
+                <div class="object"></div>
+            </div>
+        </div>
+    </div>
+
+    <!--End off Preloader -->
+    <!-- Header -->
+    @{ Html.RenderAction("RenderHeader", "SharedLayout");}
+    <!-- End of Header -->
+
+    @RenderBody()
+
+    <!-- Footer -->
+    @{ Html.RenderAction("RenderFooter", "SharedLayout");}
+
+    <!-- Footer end -->
+    <!-- JavaScript -->
+    <script src="~/scripts/jquery-1.12.1.min.js"></script>
+    <script src="~/scripts/bootstrap.min.js"></script>
+
+    <!-- Bootsnav js -->
+    <script src="~/scripts/bootsnav.js"></script>
+
+    <!-- JS Implementing Plugins -->
+    <script src="~/scripts/isotope.js"></script>
+    <script src="~/scripts/isotope-active.js"></script>
+    <script src="~/scripts/jquery.fancybox.js?v=2.1.5"></script>
+
+    <script src="~/scripts/jquery.scrollUp.min.js"></script>
+
+    <script src="~/scripts/main.js"></script>
+</body>
+</html>	
